@@ -26,84 +26,82 @@
 
 		<div class="container">
 			
-			<form class="search-field">
+			<form class="search-field" autocomplete="off">
 				
 				<input type="text" id="search" placeholder="e.g., Guardians of the Galaxy" required autofocus>	
 				<input type="submit" value="Search">
 
 			</form>	<!--end form-->			
 
-		</div> <!--end search-field-->
+		</div> <!--end container-->
 
-		<div class="container results-display">
+		<div class="container results-wrapper">
 			
 			<div class="row">
 				
-				<div class="col-xs-12 results">
+				<div class="col-xs-12 results ">
 					
-					<div id="poster">
-
-						<img src="http://content8.flixster.com/movie/11/17/80/11178082_tmb.jpg" alt="poster" width="100" height="100">
-
-					</div> <!--end poster-->	
-
-					<div class="title">
-						
-						<h2 class="text-capitalize">Guardians of the galaxy</h2>
-
-					</div> <!--end title-->
-
-					<div id="synopsis">
-						
-						<p>From Marvel, the studio that brought you the global blockbuster franchises of Iron Man, Thor, Captain America and The Avengers, comes a new team-the Guardians of the Galaxy. An action-packed, epic space adventure, Marvel's \"Guardians of the Galaxy\" expands the Marvel Cinematic Universe into the cosmos, where brash adventurer Peter Quill finds himself the object of an unrelenting bounty hunt after stealing a mysterious orb coveted by Ronan, a powerful villain with ambitions that threaten the entire universe. To evade the ever-persistent Ronan, Quill is forced into an uneasy truce with a quartet of disparate misfits-Rocket, a gun-toting raccoon, Groot, a tree-like humanoid, the deadly and enigmatic Gamora and the revenge-driven Drax the Destroyer. But when Quill discovers the true power of the orb and the menace it poses to the cosmos, he must do his best to rally his ragtag rivals for a last, desperate stand-with the galaxy's fate in the balance. (C) Walt Disney</p>
-
-					</div> <!--end synopsis-->
-
-					<div id="cast">
-
-						<ul> <h3>Cast</h3>
-
-							<li><strong>Chris Pratt</strong> as Peter Quill</li>
-							<li><strong>Zoe Saldana</strong> as Gamora</li>
-							<li><strong>Vin Diesel</strong> as Groot</li>
-
-						</ul>
-
-					</div> <!--end cast-->
-
-					<div id="reviews">
-						
-						<p class="lead">Reviews</p>
-						<p>critics review: Certified Fresh</p>
-						<p>critics score: 92</p>
-						<p>audience review: Upright</p>
-						<p>audience score: 95</p>
-
-					</div> <!--end reviews-->
-
-					<div id="ratings">
-
-						<p class="lead">Rated: PG-13</p>
-						
-					</div>	<!--end ratings-->
-
-					<div id="run-time">
-						
-						<p class="lead">Running Time: 121 mins</p>
-
-					</div> <!--end run-time-->
-
-					<div id="date">
-							
-						<p class="lead">Release Date: 2014</p>
-
-					</div> <!--end date-->
+					Results Go Here	
 
 				</div> <!--end results-->
 
 			</div> <!--end row-->
 
-		</div> <!--end results-display-->
+		</div> <!--end results-wrapper-->
+
+		<div class="container template hidden">
+			
+			<div class="row">
+				
+				<div class="col-xs-12 movie-info">
+					
+					<div class="movie-header">
+						
+						<div id="poster">
+							<img src="" alt="poster">
+						</div> <!--end poster-->
+
+						<div id="title">
+							<h2></h2>
+						</div> <!--end title-->
+
+						<div id="synopsis">
+							<p></p>
+						</div> <!--end synopsis-->
+	
+					</div> <!--end movie-header-->
+
+					<div id="year">
+						<p></p>
+					</div> <!--end date-->
+
+					<div id="rating">
+						<p></p>
+					</div> <!--end rating-->
+
+					<div id="runtime">
+						<p></p>
+					</div> <!--end runtime-->
+
+					<div class="reviews">
+
+						<div id="critics">
+							<p></p>
+						</div> <!--end critics-->
+
+						<div id="audience">
+							<p></p>
+						</div> <!--end audiencd-->
+
+					</div> <!--end reviews-->
+
+				</div> <!--end movie-info-->	
+
+			</div> <!--end row-->	
+
+		</div><!--end tempalate-->
+
+
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/apps.js"></script>
