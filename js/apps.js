@@ -34,8 +34,23 @@ $(document).ready(function() {
 
 		//set synopsis property in result
 		var synopsis = result.find('#synopsis p');
-		synopsis.text(movie.synopsis);
 
+			//check to see if synopsis is available
+			if( movie.synopsis == '' ) {
+
+				synopsis.text("Synopsis: N/A");
+
+			} else {
+
+				synopsis.text("Synopsis: " + movie.synopsis);
+
+			}
+
+		//set cast property in result
+		var cast = result.find('#cast p');
+		cast.text("Cast: " + movie.abridged_cast[0].name + ", " + movie.abridged_cast[1].name + ", " + movie.abridged_cast[2].name + ", " + movie.abridged_cast[3].name);	
+	
+			
 		//set year property in result
 		var year = result.find('#year p');
 		year.text("Released: " + movie.year);
@@ -46,16 +61,48 @@ $(document).ready(function() {
 
 		//set runtime property in result
 		var runtime = result.find('#runtime p');
-		runtime.text("Runtime: " + movie.runtime);
 
-		//set critic_rating and audience_rating in result  
+			//check to see if runtime is available
+			if ( movie.runtime == '' || movie.runtime == null ) { 
+
+				runtime.text("Runtime: N/A"); 
+
+			} else {
+
+				runtime.text("Runtime: " + movie.runtime + " min");
+
+			}
+
+		//set critic rating and score property in result  
 		var critics = result.find('#critics p');
-		critics.text("Rated: " + movie.ratings.critics_rating + " by Critics with a score of " + movie.ratings.critics_score);
 
+			//check to see if critics ratings and scores are availaable
+			if ( movie.ratings.critics_rating == null || movie.ratings.critics_score == '' ) {
+
+				critics.text("Critics Rating & Score N/A");
+
+			} else {
+
+				critics.text("Critics Rating: " + movie.ratings.critics_rating + " with a score of " + movie.ratings.critics_score);
+
+			}
+
+		//set audience rating and score property in result 	
 		var audience = result.find('#audience p');
-		audience.text("Rated: " + movie.ratings.audience_rating + " by Audience with a score of " + movie.ratings.audience_score);
 
-		return result;
+			//check to see if audience ratings and scores are available
+			if ( movie.ratings.audience_rating == null || movie.ratings.audience_score == '' ) {
+
+				audience.text("Audience Rating & Score N/A");
+
+			} else {
+
+				audience.text("Audience Rating: " + movie.ratings.audience_rating + " with a score of " + movie.ratings.audience_score);
+
+			}
+
+		//append data to '.results' div 
+		$('.results').append(poster, title, synopsis, cast, year, rating, runtime, critics, audience);
 
 	} //end showMovie function
 
@@ -77,13 +124,10 @@ $(document).ready(function() {
 		//callback function for successful GET request
 		.done(function(data) {
 
-			$.each(data.movies, function(index, item) {
+			$.each(data.movies, function(i, item) {
 
-				//set showMovie function to variable movie
-				var movie = showMovie(item);	
-
-				//movie is called and appended to '.results' div	
-				$('.results').append(movie);
+				//call showMovie function passing item as parameter (item = data returned by API)
+				showMovie(item);
 
 			}); //end $.each()
 
