@@ -12,13 +12,13 @@
 
 	<body>
 		
-		<div class="page-header header">
+		<div class="page-header center header">
 			
-			<h1>Movie Wizard <small> About</small></h1>
+			<h1>Movie Wizard <small> About</small></h1> 
 
 		</div> <!--end header-->
 
-		<div class="container about">
+		<div class="container about hide">
 			
 			<p class="lead">Movie Wizard is an app that uses Rotten Tomatoes' API to bring you information about any movie you would like to search. Get reviews by users and critics, movie synopsis, ratings, cast information, run-time, and release dates. Enter a keyword or full title of a movie and view the information below.</p>
 
@@ -26,82 +26,24 @@
 
 		<div class="container">
 			
-			<form class="search-field" autocomplete="off" onsubmit="return false;">
-				
-				<input type="text" id="search" placeholder="e.g., Guardians of the Galaxy" required autofocus>	
-				<input type="submit" value="Search">
-
-			</form>	<!--end form-->			
-
-		</div> <!--end container-->
-
-		<div class="container results-wrapper">
-			
 			<div class="row">
-				
-				<div class="col-xs-12 results ">
-					
-					Results Go Here	
 
+				<form class="col-xs-12 col-sm-3 search-field" autocomplete="off" onsubmit="return false;">
+					
+					<input type="text" id="search" placeholder="e.g., Guardians of the Galaxy" required autofocus>	
+					<input type="submit" value="Search">
+
+				</form>	<!--end form-->			
+
+				<div class="col-xs-12 col-sm-9 well well-sm results">
+
+					<strong>Results will be displayed here. If results are not shown, please try another input.</strong>
+					
 				</div> <!--end results-->
-
-			</div> <!--end row-->
-
-		</div> <!--end results-wrapper-->
-
-		<div class="container template hidden">
-			
-			<div class="row">
-				
-				<div class="col-xs-12 movie-info">
-						
-					<div id="poster">
-						<img src="" alt="poster" width="120" height="120">
-					</div> <!--end poster-->
-
-					<div id="title">
-						<h2></h2>
-					</div> <!--end title-->
-
-					<div id="synopsis">
-						<p></p>
-					</div> <!--end synopsis-->
-					
-					<div id="cast">
-						<p></p>
-					</div> <!--end cast-->
-
-					<div id="year">
-						<p></p>
-					</div> <!--end date-->
-
-					<div id="rating">
-						<p></p>
-					</div> <!--end rating-->
-
-					<div id="runtime">
-						<p></p>
-					</div> <!--end runtime-->
-
-					<div class="reviews">
-
-						<div id="critics">
-							<p></p>
-						</div> <!--end critics-->
-
-						<div id="audience">
-							<p></p>
-						</div> <!--end audiencd-->
-
-					</div> <!--end reviews-->
-
-				</div> <!--end movie-info-->	
 
 			</div> <!--end row-->	
 
-		</div><!--end tempalate-->
-
-
+		</div> <!--end container-->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/apps.js"></script>
