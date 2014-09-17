@@ -18,6 +18,13 @@ $(document).ready(function() {
 
 	});
 
+	//click function to show info about the page 
+	$('#about').click(function() {
+
+		$('.info').slideToggle();
+
+	});
+
 }); //end document ready	
 
 	//function to append returned data from Rotten Tomatoes to DOM

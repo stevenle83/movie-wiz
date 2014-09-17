@@ -8,36 +8,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/hover.css" media="all">
+		<link href='http://fonts.googleapis.com/css?family=Philosopher:400,400italic' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
 		
-		<div class="page-header center header">
+		<div class="jumbotron center header">
 			
-			<h1>Movie Wizard <small> About</small></h1> 
+			<h1>Movie Wizard <small id="about" class="float"> About</small></h1> 
 
 		</div> <!--end header-->
 
-		<div class="container about hide">
+		<div class="container info">
 			
-			<p class="lead">Movie Wizard is an app that uses Rotten Tomatoes' API to bring you information about any movie you would like to search. Get reviews by users and critics, movie synopsis, ratings, cast information, run-time, and release dates. Enter a keyword or full title of a movie and view the information below.</p>
+			<p class="lead">Movie Wizard is an app that uses Rotten Tomatoes' API to bring you information about any movie you would like to search. Get reviews by users and critics, movie synopsis, ratings, cast information, run-time, and release dates. Enter a keyword or full title of a movie and view the information below. If your search doesn't  appear, make another enrty.</p>
 
 		</div> <!--end about-->
 
-		<div class="container">
+		<div class="container content">
 			
 			<div class="row">
 
 				<form class="col-xs-12 col-sm-3 search-field" autocomplete="off" onsubmit="return false;">
 					
 					<input type="text" id="search" placeholder="e.g., Guardians of the Galaxy" required autofocus>	
-					<input type="submit" value="Search">
+					<input type="submit" value="Search" id="search-btn" class="grow">
 
 				</form>	<!--end form-->			
 
 				<div class="col-xs-12 col-sm-9 well well-sm results">
-
-					<strong>Results will be displayed here. If results are not shown, please try another input.</strong>
 					
 				</div> <!--end results-->
 
