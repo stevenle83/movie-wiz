@@ -1,9 +1,20 @@
 /* css for background, fonts, and colors of elements */
 
-/*body {
+body {
 	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg') no-repeat center center fixed;
 	background-size: cover;
-}*/
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
 
 .header {
 	background-color: rgba(228, 207, 255, 0.1);
