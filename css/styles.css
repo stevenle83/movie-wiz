@@ -1,10 +1,7 @@
 /* css for background, fonts, and colors of elements */
 
 body {
-	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg');
-	background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;       
+	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg') no-repeat center center fixed;     
     webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -58,6 +55,7 @@ html {
 
 .results {
 	display: none;
+	margin-bottom: 5%;
 }
 
 .info {
