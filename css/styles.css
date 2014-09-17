@@ -1,8 +1,14 @@
 /* css for background, fonts, and colors of elements */
 
 body {
-	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg') no-repeat center center fixed;
-	background-size: cover;
+	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg');
+	background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 	padding: 0;
 	margin: 0;
 	width: 100%;
