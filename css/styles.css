@@ -1,7 +1,7 @@
 /* css for background, fonts, and colors of elements */
 
 body {
-	background: url('http://ingyen-hatterkep.hu/wallpapers/Fantasy/_teljeskep/50923.jpg') no-repeat center center fixed;     
+	background: url('http://www.mrwallpaper.com/wallpapers/hobbit-gandalf-art-1920x1080.jpg') no-repeat center right fixed;     
     webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@ html {
 }
 
 .header {
-	background-color: rgba(228, 207, 255, 0.1);
+	background-color: rgba(228, 207, 255, 0);
 	color: rgba(244, 255, 246, 1);
 	font-family: 'Philosopher', sans-serif;
 }
@@ -56,6 +56,7 @@ html {
 .results {
 	display: none;
 	margin-bottom: 5%;
+	padding: 0 5%;
 }
 
 .info {
@@ -68,10 +69,6 @@ html {
 
 .search-field {
 	margin-bottom: 5%;
-}
-
-.results {
-	padding: 0 5%;
 }
 
 .synopsis {
@@ -103,9 +100,9 @@ img {
 }
 
 .float:hover {
-  	-webkit-transform: translateY(-5px);
-  	-ms-transform: translateY(-5px);
-  	transform: translateY(-5px);
+  	-webkit-transform: translateY(-10px);
+  	-ms-transform: translateY(-10px);
+  	transform: translateY(-10px);
 	cursor: pointer;
 	color: ;
 }
